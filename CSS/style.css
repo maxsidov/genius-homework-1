@@ -1,0 +1,254 @@
+/* play-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Play";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/play-v21-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* play-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Play";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/play-v21-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* roboto-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/roboto-v49-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* roboto-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/roboto-v49-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* roboto-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/roboto-v49-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+:root {
+  --color-dark: #011c44;
+  --color-black: #2b7fff;
+  --color-light: #ffffff;
+}
+
+/* Bazza */
+body {
+  color: var(--color-dark);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* Меню hedear Навігація по сайту */
+.menu-header {
+  color: var(--color-dark);
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+}
+.menu-header:hover {
+  color: var(--color-black);
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+/*  Заголовок */
+
+/* Парграф  Косметологічна клініка*/
+.main-paragraf-title {
+  color: var(--color-dark);
+  font-family: "Roboto";
+  font-style: normal;
+  font-size: 18px;
+}
+/* Beauty Zone  Назва сайту*/
+.main-Hero-title {
+  color: var(--color-black);
+  font-family: "Play";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 140px;
+  line-height: 0.8;
+}
+/* button кнопка набрати */
+.button {
+  color: var(--color-light);
+  width: 155px;
+  height: 21px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.2;
+  background-color: var(--color-black);
+  border: 2px solid var(--color-black);
+  border-radius: 32px;
+  width: 219px;
+  height: 53px;
+  left: 20px;
+  top: 20px;
+}
+
+.button:hover {
+  color: var(--color-black);
+  background-color: transparent;
+  border: 2px solid var(--color-black);
+  border-radius: 32px;
+}
+/* Опис для button */
+.main-paragraf-button {
+  color: #4a4a4a;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+/* h2 загловок Перевтілюйтесь в beauty zone! */
+.main-h2-beauty-zone {
+  color: var(--color-dark);
+  font-family: "Play";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 1.7;
+}
+/* span зміна Деяких елементів коляру */
+.accent {
+  color: var(--color-black);
+}
+/* Параграф опис Перевтілюйтесь в beauty zone */
+.paragraf-description {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.6;
+}
+
+/* main-h2-Why-us другий заголовок Чому обирають нас */
+.main-h2-Why-us {
+  color: var(--color-dark);
+  font-family: "Play";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+}
+/* Опис Чому обирають нас */
+.paragraf-Why-us-description {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.3;
+}
+
+/* наші процедури */
+.main-procedures {
+  color: var(--color-dark);
+  font-family: "Play";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+}
+/* Опис Наші Процедури з фото */
+.main-h3-procedures {
+  color: var(--color-light);
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+}
+/* Як на знайти */
+.main-search {
+  color: var(--color-dark);
+  font-family: "Play";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+}
+
+/* Записатися безкоштовно h3 */
+.h3-Sign-up {
+  color: var(--color-light);
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+}
+/* кнопка щаписатись бескоштовно */
+.button-Sign-up {
+  color: var(--color-light);
+  width: 281px;
+  height: 53px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.2;
+  background-color: var(--color-black);
+  border: 2px solid var(--color-black);
+  border-radius: 32px;
+}
+
+.button-Sign-up:hover {
+  color: var(--color-black);
+  background-color: transparent;
+  border: 2px solid var(--color-black);
+  border-radius: 32px;
+}
+
+.paragraf-Sign-up {
+  color: #747272;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+}
+/* Футер */
+/* footer menu */
+.main-footer-menu {
+  color: var(--color-light);
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+}
+/* Політика конфіденційності*/
+.main-confidentiality {
+  color: var(--color-light);
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.main-2022 {
+  color: #747272;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+}

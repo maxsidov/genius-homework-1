@@ -70,6 +70,8 @@ p {
 
 ul {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
@@ -78,7 +80,40 @@ ul {
   margin: 0 auto;
 }
 
+/* Heder conteiner */
+
+.header-conteiner {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.heder-nav {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  gap: 40px;
+}
+
+.conteiner-menu {
+  display: flex;
+  gap: 64px;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.conteiner-contact {
+  display: flex;
+  gap: 32px;
+}
 /* Меню hedear Навігація по сайту */
+/* Herov conteiner */
+/* .hero-conteiner {
+  display: flex;
+  flex-direction: column;
+ } */
+/*  */
+
 .menu-header {
   color: var(--color-dark);
   font-style: normal;
@@ -89,7 +124,6 @@ ul {
 .menu-header:hover {
   color: var(--color-black);
   font-style: normal;
-  font-weight: 700;
   font-size: 18px;
 }
 .hero-section {
@@ -153,6 +187,26 @@ ul {
   padding-bottom: 112px;
 }
 
+.conteiner-beauty-zone {
+  display: flex;
+}
+.conteiner-description-beauty-zone {
+  max-width: 709px;
+  justify-content: space-between;
+}
+
+.img-beauty-zone {
+  display: flex;
+  flex-direction: column;
+  max-width: 499px;
+  max-height: 665px;
+}
+
+.img-beauty-zone1 {
+}
+.img-beauty-zone2 {
+}
+
 .main-h2-beauty-zone {
   color: var(--color-dark);
   font-family: "Play";
@@ -191,6 +245,28 @@ ul {
 .titel-Why-us {
   margin-bottom: 48px;
 }
+/* conteiner */
+.container-Why-us-description {
+  display: flex;
+  gap: 56px;
+}
+.container-Why-us1 {
+  padding: 24px;
+  border: 1px solid var(--color-dark); /* удалити*/
+  border-radius: 16px;
+}
+
+.container-Why-us2 {
+  padding: 24px;
+  border: 1px solid var(--color-dark); /* удалити*/
+  border-radius: 16px;
+}
+
+.container-Why-us3 {
+  padding: 24px;
+  border: 1px solid var(--color-dark); /* удалити*/
+  border-radius: 16px;
+}
 
 .Section {
   padding: 48px 0;
@@ -215,6 +291,12 @@ ul {
 .titel-procedures {
   margin-bottom: 48px;
 }
+/* Контейнер для розміщення фото */
+.conteiter-procedures {
+  display: flex;
+  gap: 16px;
+}
+
 /* Опис Наші Процедури з фото */
 .main-h3-procedures {
   color: var(--color-light);
@@ -231,10 +313,22 @@ ul {
   font-size: 64px;
 }
 
+/* Як нас знайти */
+
 .titel-search {
   margin-bottom: 48px;
 }
+/* Як нас знайти на блоки */
+.main-record {
+  display: flex;
+  gap: 32px;
+}
 
+.record {
+  background-color: var(--color-dark);
+  border-radius: 32px;
+  padding: 48px 56px;
+}
 /* Записатися безкоштовно h3 */
 .h3-Sign-up {
   color: var(--color-light);
@@ -302,7 +396,7 @@ ul {
 .phone-mail {
   margin-bottom: 16px;
 }
-/* кнопка щаписатись бескоштовно */
+/* кнопка записатись бескоштовно */
 .button-Sign-up {
   color: var(--color-light);
   width: 281px;
@@ -335,6 +429,18 @@ ul {
   font-size: 12px;
 }
 /* Футер */
+
+/* футер контейнер розміщення в ряд */
+.footer-container {
+  background-color: #011c44;
+  display: flex;
+  align-items: center;
+}
+
+
+.main-conteiner {
+  gap: 16px;
+}
 /* footer menu */
 .main-footer-menu {
   color: var(--color-light);

@@ -40,7 +40,9 @@
   src: url("../fonts/roboto-v49-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /*  Base */
-* {
+*,
+::after,
+::before {
   box-sizing: border-box;
 }
 
@@ -68,18 +70,21 @@ p {
   margin-top: 0;
 }
 
+a {
+  display: inline-block;
+}
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
+/*  HEader */
 .container {
   width: 100%;
   max-width: 1288px;
   margin: 0 auto;
 }
-
 /* Heder conteiner */
 
 .header-conteiner {
@@ -102,17 +107,7 @@ ul {
   justify-content: center;
 }
 
-.conteiner-contact {
-  display: flex;
-  gap: 32px;
-}
 /* Меню hedear Навігація по сайту */
-/* Herov conteiner */
-/* .hero-conteiner {
-  display: flex;
-  flex-direction: column;
- } */
-/*  */
 
 .menu-header {
   color: var(--color-dark);
@@ -126,16 +121,33 @@ ul {
   font-style: normal;
   font-size: 18px;
 }
-.hero-section {
-  padding: 16.52px 0 172.48px 0x;
+/* HEADER соціальна сеть */
+.conteiner-contact {
+  display: flex;
+  gap: 32px;
 }
+
 /*  Заголовок */
+.hero-section {
+  padding: 17px;
+  padding-left: 106px;
+  background-image: url(../images/Doctor-performs\ procedures-on-a-woman.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
 
 /* Парграф  Косметологічна клініка*/
 .main-paragraf-title {
   color: var(--color-dark);
   font-style: normal;
   font-size: 18px;
+  margin-bottom: 16px;
 }
 /* Beauty Zone  Назва сайту*/
 .main-Hero-title {
@@ -145,8 +157,13 @@ ul {
   font-weight: 700;
   font-size: 140px;
   line-height: 0.8;
+  width: 529px;
+  margin-bottom: 40px;
 }
 /* button кнопка набрати */
+.conteiner-button {
+  width: 238px;
+}
 .button {
   color: var(--color-light);
   font-family: "Roboto";
@@ -180,6 +197,7 @@ ul {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.5;
+  text-align: center;
 }
 
 /* h2 загловок Перевтілюйтесь в beauty zone! */
@@ -191,8 +209,9 @@ ul {
   display: flex;
 }
 .conteiner-description-beauty-zone {
+  width: 100%;
   max-width: 709px;
-  justify-content: space-between;
+  gap: 32px;
 }
 
 .img-beauty-zone {
@@ -200,11 +219,22 @@ ul {
   flex-direction: column;
   max-width: 499px;
   max-height: 665px;
+  gap: 40px;
 }
 
 .img-beauty-zone1 {
+  border-radius: 50%;
+  width: 100%;
+  max-width: 327px;
+  max-height: 327px;
+  filter: drop-shadow(0px 4px 4px rgba(168, 198, 245, 0.2));
 }
 .img-beauty-zone2 {
+  border-radius: 50%;
+  width: 100%;
+  max-width: 327px;
+  max-height: 327px;
+  filter: drop-shadow(0px 4px 4px rgba(168, 198, 245, 0.2));
 }
 
 .main-h2-beauty-zone {
@@ -242,30 +272,33 @@ ul {
   font-size: 64px;
 }
 
+.conteiner-Why-us {
+  display: flex;
+  justify-content: center;
+}
+
 .titel-Why-us {
   margin-bottom: 48px;
+  width: 100%;
+  max-width: 432px;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
 }
+
 /* conteiner */
 .container-Why-us-description {
   display: flex;
   gap: 56px;
+  justify-content: center;
 }
+
 .container-Why-us1 {
   padding: 24px;
   border: 1px solid var(--color-dark); /* удалити*/
   border-radius: 16px;
-}
-
-.container-Why-us2 {
-  padding: 24px;
-  border: 1px solid var(--color-dark); /* удалити*/
-  border-radius: 16px;
-}
-
-.container-Why-us3 {
-  padding: 24px;
-  border: 1px solid var(--color-dark); /* удалити*/
-  border-radius: 16px;
+  width: 100%;
+  max-width: 316px;
 }
 
 .Section {
@@ -280,6 +313,49 @@ ul {
 }
 
 /* наші процедури */
+.conteiner-procedures {
+  display: flex;
+  justify-content: center;
+}
+
+.list-conteiner-procederes {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+}
+/* Кнопка для прогортування */
+.carousel-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 1px solid var(--color-dark);
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.carousel-conteiner {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+
+.carousel-button:hover {
+  background-color: var(--color-black);
+}
+
+.carousel-arrow {
+  fill: var(--color-dark);
+}
+
+.carousel-button:hover .carousel-arrow {
+  fill: var(--color-light);
+}
+/*  */
+
 .main-procedures {
   color: var(--color-dark);
   font-family: "Play";
@@ -292,13 +368,34 @@ ul {
   margin-bottom: 48px;
 }
 /* Контейнер для розміщення фото */
-.conteiter-procedures {
+.conteiter-procedures-img {
   display: flex;
+  justify-content: center;
   gap: 16px;
 }
-
+/* IMG PROCEDURES */
+.img-procedures1 {
+  border-radius: 120px 4px;
+}
 /* Опис Наші Процедури з фото */
+.procedures--info {
+  display: flex;
+  background: linear-gradient(
+    180.05deg,
+    rgba(1, 28, 68, 0) 48.53%,
+    rgba(1, 28, 68, 0.725825) 84.61%,
+    #011c44 101.39%
+  );
+  border-radius: 120px 4px;
+  height: 456px;
+  width: 344px;
+}
 .main-h3-procedures {
+  display: flex;
+  justify-content: center;
+  align-self: flex-end;
+  flex-wrap: wrap;
+  align-items: center;
   color: var(--color-light);
   font-style: normal;
   font-weight: 400;
@@ -314,6 +411,13 @@ ul {
 }
 
 /* Як нас знайти */
+.contact-section {
+  padding-bottom: 94px;
+}
+.conteiner-search {
+  display: flex;
+  justify-content: center;
+}
 
 .titel-search {
   margin-bottom: 48px;
@@ -322,12 +426,43 @@ ul {
 .main-record {
   display: flex;
   gap: 32px;
+  justify-content: center;
+}
+
+.container-maps {
+  flex-shrink: 0;
+  border: none;
+  border-radius: 32px;
 }
 
 .record {
+  background-image: url(../images/background-\ \ singl-up.png);
+  background-color: var(--color-dark);
+  background-size: cover;
+  background-position: center;
   background-color: var(--color-dark);
   border-radius: 32px;
-  padding: 48px 56px;
+  width: 100%;
+  max-width: 423px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.conteiner-record {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.conteiner-h3-Sign-up {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 274px;
 }
 /* Записатися безкоштовно h3 */
 .h3-Sign-up {
@@ -341,6 +476,11 @@ ul {
   margin-bottom: 32px;
 }
 
+.conteiner-button-Sign {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
 /* border Заповнити дані */
 
 .border-name {
@@ -411,6 +551,15 @@ ul {
   border-radius: 32px;
 }
 
+.container-paragraf-Sign-up {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 281px;
+}
+
 .title-button-Sign {
   margin-bottom: 8px;
 }
@@ -422,6 +571,14 @@ ul {
   border-radius: 32px;
 }
 
+.conteiner-paragrag-sign-up {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 213px;
+}
+
 .paragraf-Sign-up {
   color: #747272;
   font-style: normal;
@@ -429,17 +586,59 @@ ul {
   font-size: 12px;
 }
 /* Футер */
-
+/* Зображення футер */
+.footer {
+  padding: 56px 0;
+}
+.footer {
+  background-image: url(../images/background-footer.png);
+  background-color: var(--color-dark);
+  background-size: cover;
+  background-position: center;
+}
 /* футер контейнер розміщення в ряд */
 .footer-container {
-  background-color: #011c44;
   display: flex;
-  align-items: center;
+  gap: 20px;
 }
 
+.footer-nav {
+  display: flex;
+  flex-basis: 50%;
+  gap: 20px;
+}
+.logo-footer {
+  flex-grow: 1;
+}
 
-.main-conteiner {
+.footer-address {
+  display: flex;
+  flex-basis: 50%;
+  gap: 20px;
+}
+.address-container {
+  flex-grow: 1;
   gap: 16px;
+ }
+
+.address-confidentiality {
+  flex-grow: 1;
+}
+
+.social-networks {
+  display: flex;
+  gap: 24px;
+}
+.info-address {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 16px;
+  padding-bottom: 16px;
+}
+
+.main-container {
+  flex-grow: 1;
 }
 /* footer menu */
 .main-footer-menu {
@@ -449,10 +648,13 @@ ul {
   font-size: 16px;
   text-decoration: none;
 }
+
+.address-icon {
+  fill: var(--color-light);
+}
 /* Політика конфіденційності*/
 .main-confidentiality {
   color: var(--color-light);
-
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
